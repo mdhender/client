@@ -1,7 +1,6 @@
 <script>
 	import {site} from './stores/site';
-
-	console.log(site);
+	import Footer from './Footer.svelte';
 </script>
 
 <div id="top">
@@ -158,16 +157,4 @@
 	<hr class="clear"/>
 </div>
 
-<div id="footer">
-	<div class="left">
-		<p>
-			&copy; {$site.site.copyright.year} {$site.site.copyright.author}
-			| <a href="https://github.com/mdhender/server">Gas Giant Battles v0.0.0</a>
-			| Template design by <a href="https://github.com/mdhender/server/VIKLUND.md">Andreas Viklund</a>
-		</p>
-	</div>
-	<div class="right textright">
-		<p>Sample footer menu: <a href="#">Link 1</a> | <a href="#">Link 2</a> | <a href="#">Link 3</a></p>
-		<p class="hide"><a href="#top">Return to top</a></p>
-	</div>
-</div>
+<Footer />
