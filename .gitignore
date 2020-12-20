@@ -22,6 +22,7 @@
 .npm
 .nuxt
 .nyc_output
+.pnp.*
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
@@ -29,7 +30,6 @@
 .serverless/
 .tern-port
 .vuepress/dist
-.yarn-integrity
 bower_components
 build/Release
 coverage
@@ -44,5 +44,12 @@ pids
 public/build/
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 typings/
+
+.yarn-integrity
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 yarn-debug.log*
 yarn-error.log*
